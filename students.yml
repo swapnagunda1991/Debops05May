@@ -1,0 +1,23 @@
+---
+-mystudents : 
+  - name : swapna
+    phno : 90909878
+    address :
+      doorno :fg
+      street no :56
+      pincode :45343
+  
+  - name : swapna1
+    phno : 56756789
+    address :
+      doorno :45
+      street no :556
+      pincode :5654
+  
+  - name : swapna2
+    phno : 545678
+    address :
+      doorno :67
+      street no :567
+      pincode :5654345678
+  
