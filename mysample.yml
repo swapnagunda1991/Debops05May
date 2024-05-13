@@ -1,46 +1,8 @@
 # Amazon Linux Apache Installation
 
 # Package Installation
-packages:
+yum:
   - name: httpd
     state: present  # Ensure the package is installed
 
-# Service Configuration
-services:
-  - name: httpd
-    state: started  # Ensure the service is started
-    enabled: true   # Enable the service to start on boot
 
-# Firewall Configuration
-firewall:
-  rules:
-    - name: Allow HTTP
-      port: 80
-      protocol: tcp
-      state: enabled
-
-# Directory Configuration
-directories:
-  - path: /var/www/html
-    owner: apache
-    group: apache
-    mode: "0755"
-    state: directory
-
-# File Configuration
-files:
-  - path: /var/www/html/index.html
-    owner: apache
-    group: apache
-    mode: "0644"
-    content: |
-      <!DOCTYPE html>
-      <html>
-      <head>
-          <title>Welcome to my Apache Server</title>
-      </head>
-      <body>
-          <h1>Hello, World!</h1>
-          <p>This is a sample webpage served by Apache HTTP Server.</p>
-      </body>
-      </html>
