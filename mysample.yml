@@ -2,13 +2,14 @@
 - hosts : all
   become : yes
   tasks:
-    - name: Install Apache
+    - name: I want to Install Apache
       yum:
         name: httpd
         state: latest 
+        when : ansible_os_family=="RedHat" 
     - name :  I want to start apache2 on amazon linux
       service :
             name : httpd
             state : started
-
+            when : ansible_os_family=="RedHat"
 
