@@ -1,7 +1,7 @@
 # Amazon Linux Apache Installation
 
 # Package Installation
-yum:
+package:
   - name: httpd
     state: present  
 
