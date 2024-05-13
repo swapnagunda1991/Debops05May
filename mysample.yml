@@ -1,8 +1,8 @@
-# Amazon Linux Apache Installation
-
-# Package Installation
-package:
-  - name: httpd
-    state: present  
+---
+- hosts : all
+  become : yes
+  package:
+  - name : httpd
+    state : present  
 
 
