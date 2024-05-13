@@ -1,8 +1,5 @@
 ---
 - hosts : all
-  become : yes
   packages :
-  - httpd
-  services:
-  - name: install httpd
-    state: started
+  - name: httpd
+    state: present
