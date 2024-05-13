@@ -6,8 +6,8 @@
       yum:
         name: httpd
         state: latest 
-    - name : I want to start apache2 on amazon linux
-        service :
+    - name :  I want to start apache2 on amazon linux
+      service :
             name : httpd
             state : started
 
