@@ -14,7 +14,7 @@
             state : started
          
     - name : I want to install apache2 on debian Node
-      yum :
+      apt :
             name : apache2
             state : present
       vars :
