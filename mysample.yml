@@ -17,7 +17,6 @@
       apt :
             name : apache2
             state : present
-      vars :
-            use_backend : yum
+      
             
 
