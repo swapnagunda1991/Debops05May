@@ -13,7 +13,7 @@
             state : started
             when : ansible_os_family == "RedHat"
     - name : I want to start apache2 on debian Node
-      yum :
+      apt :
             name : httpd
             state : present
             when : ansible_os_family == "Debian"
