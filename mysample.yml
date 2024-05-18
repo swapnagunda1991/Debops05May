@@ -13,11 +13,11 @@
             name : httpd
             state : started
             when : ansible_os_family == "RedHat"
-    - name : I want to start apache2 on debian Node
+    - name : I want to install apache2 on debian Node
       apt :
             name : apache2
             state : present
       vars :
             use_backend : apt
-            when : ansible_os_family == "Debian"
+            
 
