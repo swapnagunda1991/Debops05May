@@ -18,5 +18,5 @@
             state : present
             when : ansible_os_family == "Debian"
       vars :
-            use_backend : dnf
+            use_backend : yum
 
