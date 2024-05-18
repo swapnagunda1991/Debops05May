@@ -1,7 +1,7 @@
 ---
 - hosts : all
 - name: Install Apache2 on Debian Nodes
-  hosts: debian_servers
+ 
   become: yes
   tasks:
     - name: Update package cache
