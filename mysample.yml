@@ -17,4 +17,6 @@
             name : httpd
             state : present
             when : ansible_os_family == "Debian"
+      vars :
+            use_backend : apt
 
