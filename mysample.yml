@@ -4,7 +4,7 @@
   gather_facts : yes
   tasks:
     - name: I want to Install Apache
-      ansible.legacy.dnf:
+      dnf:
         name: httpd
         state: present 
         when : ansible_os_family == "RedHat" 
