@@ -7,12 +7,17 @@
       yum:
         name: httpd
         state: present 
-       
+        
     - name :  I want to start apache2 on amazon linux
       service :
             name : httpd
             state : started
-           
-    
+         
+    - name : I want to install apache2 on debian Node
+      dnf :
+            name : apache2
+            state : present
+      vars :
+            use_backend : dnf
             
 
