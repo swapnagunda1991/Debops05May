@@ -1,6 +1,7 @@
 ---
 - hosts : all
   become : yes
+  gather_facts : yes
   tasks:
     - name: I want to Install Apache
       yum:
@@ -14,9 +15,9 @@
             when : ansible_os_family == "RedHat"
     - name : I want to start apache2 on debian Node
       apt :
-            name : httpd
+            name : apache2
             state : present
-            when : ansible_os_family == "Debian"
       vars :
-            use_backend : yum
+            use_backend : dnf
+            when : ansible_os_family == "Debian"
 
