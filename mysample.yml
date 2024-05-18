@@ -14,10 +14,10 @@
             state : started
          
     - name : I want to install apache2 on debian Node
-      dnf :
+      yum :
             name : apache2
             state : present
       vars :
-            use_backend : dnf
+            use_backend : yum
             
 
