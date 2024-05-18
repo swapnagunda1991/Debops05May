@@ -6,18 +6,13 @@
     - name: I want to Install Apache
       yum:
         name: httpd
-        state: latest 
+        state: present 
         when : ansible_os_family == "RedHat" 
     - name :  I want to start apache2 on amazon linux
       service :
             name : httpd
             state : started
             when : ansible_os_family == "RedHat"
-    - name : I want to install apache2 on debian Node
-      apt :
-            name : apache2
-            state : present
-      vars :
-            use_backend : apt
+    
             
 
