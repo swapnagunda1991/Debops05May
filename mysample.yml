@@ -12,9 +12,8 @@
       service :
             name : httpd
             state : started
-         
-    - name :  
-        apt:
+    - name : I want to install apche2 on Debian node
+      apt :
           name: apache2
           state: present
 
