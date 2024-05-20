@@ -16,7 +16,7 @@
       when : ansible_os_family == "RedHat"
       
     - name : I want to install apche2 on Debian node
-      ansible.builtin.service :
+      package :
           name: apache2
           state: present
       when : ansible_os_family == "Debian"
