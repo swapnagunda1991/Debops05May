@@ -12,13 +12,13 @@
       service :
             name : httpd
             state : started
-    - name: Update package cache
-      apt:
-        update_cache: yes
+      
     - name : I want to install apche2 on Debian node
       apt :
           name: apache2
           state: present
+      vars :
+      use_backend: yum  # or use_backend: dnf
 
     - name: Ensure Apache2 service is enabled and running
       service:
