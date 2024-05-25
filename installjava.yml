@@ -3,7 +3,7 @@
   become : yes
   tasks :
   - name : install java on amazon redhat Nodes
-    dnf :
+    yum :
       name : "{{javapackgforredhat}}"
       state : present
       when : ansible_os_family == "RedHat"
