@@ -6,7 +6,11 @@
     yum :
       name : "{{javapackgforredhat}}"
       state : present
-      vars:
-      use_backend: yum
-      when : ansible_os_family == "RedHat"
+      
+
+  -  name : Install java on debian node 
+     apt :
+      name : "{{javapackgfordebian}}"
+      state : present
+     
 
