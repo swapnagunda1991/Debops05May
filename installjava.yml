@@ -1,16 +1,16 @@
 ---
-hosts : mywebservers
-become : yes
-tasks :
-- name : install java on amazon redhat Nodes
-  dnf :
-    name : "{{javapackgforredhat}}"
-    state : present
-    when : ansible_os_family == "RedHat"
+- hosts : mywebservers
+  become : yes
+  tasks :
+  - name : install java on amazon redhat Nodes
+    dnf :
+      name : "{{javapackgforredhat}}"
+      state : present
+      when : ansible_os_family == "RedHat"
 
-- name : Install java on debian node 
-  apt :
-    name : "{{javapackgfordebian}}"
-    state : present
-    when : ansible_os_family == "Debian"
+  -  name : Install java on debian node 
+     apt :
+      name : "{{javapackgfordebian}}"
+      state : present
+      when : ansible_os_family == "Debian"
 
