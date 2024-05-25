@@ -10,9 +10,3 @@
       use_backend: yum
       when : ansible_os_family == "RedHat"
 
-  -  name : Install java on debian node 
-     apt :
-      name : "{{javapackgfordebian}}"
-      state : present
-      when : ansible_os_family == "Debian"
-
