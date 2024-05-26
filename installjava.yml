@@ -4,7 +4,7 @@
   tasks :
   - name : install java on amazon redhat Nodes
     yum :
-      name : java-1.8.0-openjdk-devel
+      name : java-1.8.0-amazon-corretto.x86_64
       state : present
       
      
