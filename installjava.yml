@@ -3,7 +3,7 @@
   become : yes
   tasks :
   - name : install java on amazon redhat Nodes
-    yml :
+    yum :
       name : java-1.8.0-openjdk
       state : present
       
