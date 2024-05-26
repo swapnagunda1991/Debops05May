@@ -3,11 +3,9 @@
   become : yes
   tasks :
   - name : install java on amazon redhat Nodes
-    yum :
+    apt :
       name : "{{javapackgforredhat}}"
       state : present
-      vars:
-        use_backend: yum
-    
+      
      
 
