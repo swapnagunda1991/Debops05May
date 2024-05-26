@@ -6,11 +6,6 @@
     yum :
       name : "{{javapackgforredhat}}"
       state : present
-      
-
-  -  name : Install java on debian node 
-     apt :
-      name : "{{javapackgfordebian}}"
-      state : present
+    
      
 
