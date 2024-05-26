@@ -10,7 +10,7 @@
 
   - name : Install java on Debian Nodes
     apt :
-      name : java-1.8.0-openjdk
+      name : openjdk-8-jdk
       state : present
     when : ansible_os_family == "Debian"
       
