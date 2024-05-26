@@ -1,5 +1,6 @@
 ---
 mypackageamazonlinux : httpd
 mypackagedebiannode : apache2
-javapackgforredhat : java-1.8.0-openjdk
+
+
 
